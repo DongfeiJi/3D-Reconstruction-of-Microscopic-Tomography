@@ -1,0 +1,23 @@
+data = rand(12,12,12);
+data = smooth3(data,'box',5);
+
+isoval = .5;
+h = patch(isosurface(data,isoval),...
+   'FaceColor','blue',...
+   'EdgeColor','none',...
+   'AmbientStrength',.2,...
+   'SpecularStrength',.7,...
+   'DiffuseStrength',.4);
+isonormals(data,h)
+
+patch(isocaps(data,isoval),...
+   'FaceColor','interp',...
+   'EdgeColor','none')
+colormap hsv
+
+daspect([1,1,1])
+axis tight
+view(3)
+
+camlight right
+camlight left
