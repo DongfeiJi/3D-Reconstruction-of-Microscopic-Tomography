@@ -3,7 +3,7 @@
 This repo is for 3D reconstruction of microscopic tomographic images.   
 
      
-Firstly；  
+Firstly：  
 ./example contains some basic knowledge of three-dimensional reconstruction commonly used.  
 Secondaly：  
 ./mri_example includes examples of 3D reconstruction of human brain tomographic images scanned by CT equipment.  
